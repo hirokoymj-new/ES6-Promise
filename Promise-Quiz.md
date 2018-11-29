@@ -50,7 +50,7 @@ p2.then(function(value) {
 var p2 = new Promise(function(resolve, reject) {
   resolve(1);
 });
-// 1. Receive "1" and print it in console, and reutn 1 but not move next then because it is que.
+// 1. Receive "1" and print it in console, and reutn 1 but not move next then because it is queue.
 p2.then(function(value) {
   console.log(value);
   return value + 1;
