@@ -62,7 +62,7 @@ p.then((value) => {
 const resolvedProm = Promise.resolve(33);
 
 let thenProm = resolvedProm.then((value)=>{
-    console.log("this gets called after the end of the main stack. the value received and returned is: " + value); //<-- 3. Calls third.
+    console.log("this gets called after the end of the main stack. " + value); //<-- 3. Calls third.
     return value; //<-- 4. Calls forth
 });
 console.log(thenProm); //<--- 1. Calls first
